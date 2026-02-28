@@ -1,0 +1,36 @@
+.app-header {
+  background-color: var(--color-2);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.app-header__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-header__toggle-btn {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-header__toggle-btn:hover {
+  opacity: 0.85;
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}

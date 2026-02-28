@@ -1,0 +1,31 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables globales: Paleta por defecto (puedes cambiarla luego) */
+:root {
+  --color-1: #222831; /* Fondo principal (Oscuro) */
+  --color-2: #393E46; /* Fondo secundario / Tarjetas */
+  --color-3: #00ADB5; /* Acentos / Botones primarios */
+  --color-4: #EEEEEE; /* Textos */
+  
+  --font-main: 'Inter', system-ui, sans-serif;
+  --border-radius: 8px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-1);
+  color: var(--color-4);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Clases de utilidad generales si son necesarias */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

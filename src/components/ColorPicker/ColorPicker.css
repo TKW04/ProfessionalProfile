@@ -1,0 +1,39 @@
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.color-picker__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-4);
+}
+
+.color-picker__list {
+  display: flex;
+  gap: 10px;
+}
+
+.color-picker__btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Hacemos el botón redondo */
+  overflow: hidden;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  background: none;
+  padding: 0;
+}
+
+.color-picker__btn:hover {
+  transform: scale(1.1);
+  border-color: var(--color-3); /* El borde brilla con el color de acento */
+}
+
+.color-picker__swatch {
+  flex: 1; /* Cada color toma el 25% del botón */
+  height: 100%;
+}
