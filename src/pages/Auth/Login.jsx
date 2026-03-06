@@ -34,7 +34,7 @@ const Login = () => {
         <div className={styles.links}>
           <a href="#forgot" className={styles.link}>¿Olvidaste tu contraseña?</a>
           <span style={{ color: 'var(--color-4)', opacity: 0.8 }}>
-            ¿No tienes cuenta? <a href="#register" className={styles.link}>Regístrate</a>
+            ¿No tienes cuenta? <a href="register/" className={styles.link}>Regístrate</a>
           </span>
         </div>
       </div>

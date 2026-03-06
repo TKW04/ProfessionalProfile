@@ -1,0 +1,128 @@
+/* src/pages/EditProfile/EditProfile.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeIn 0.5s ease-in;
+  max-width: 800px;
+  margin: 0 auto; /* Centrar el formulario */
+}
+
+.card {
+  background-color: var(--color-2);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-3);
+  border-bottom: 2px solid var(--color-1);
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- FORMULARIOS E INPUTS --- */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-4);
+  opacity: 0.9;
+}
+
+.input, .textarea {
+  background-color: var(--color-1);
+  color: var(--color-4);
+  /* border-color: var(--color-3); */
+  border: 1px solid var(--color-3);
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--color-3);
+  box-shadow: 0 0 0 2px rgba(0, 173, 181, 0.2); /* Sombra suave del color de acento */
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* --- GRIDS PARA ORGANIZAR INPUTS --- */
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.dynamicItem {
+  background-color: var(--color-1);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--color-3);
+}
+
+/* --- BOTONES --- */
+.btnPrimary {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.btnPrimary:hover {
+  opacity: 0.85;
+}
+
+.btnOutline {
+  background-color: transparent;
+  color: var(--color-3);
+  border: 1px dashed var(--color-3);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+  width: 100%;
+}
+
+.btnOutline:hover {
+  background-color: var(--color-3);
+  color: var(--color-1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
